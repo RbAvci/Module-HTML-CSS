@@ -38,6 +38,10 @@ section {
   padding: 30px;
 }
 
+li {
+  list-style: none;
+}
+
 .what-is-git-img {
   width: 10%;
   height: auto;
