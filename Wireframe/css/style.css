@@ -66,7 +66,7 @@ li {
 
 /* Section 2 - Why do developers need git? */
 
-.why-do-devs-and-branch-container {
+.main-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   margin-top: 1rem;
