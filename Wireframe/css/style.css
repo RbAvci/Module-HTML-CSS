@@ -31,7 +31,7 @@ section {
   justify-content: center;
 }
 
-.first_child {
+.article:first-child {
   border: #141e46 solid 10px;
   border-radius: 5ex;
   border-style: dotted;
@@ -74,7 +74,7 @@ li {
   text-align: left;
 }
 
-.article_scnd_third {
+.article {
   border: #141e46 solid 10px;
   border-radius: 5ex;
   padding: 30px;
