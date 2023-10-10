@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Add a link to your css file here -->
   </head>
 
@@ -20,17 +21,17 @@
     <!-- Header -->
     <header>
       <section class="header">
-        <img src="" alt="rb-logo" />
-        <div>
+        <img src="img/logo.png" alt="rb-logo" class="logo" />
+        <div class="branding">
           <h1>Rb's Cake</h1>
-          <p>"Indulge in Sweet Moments at Rb's Cake Shop!"</p>
+          <h3>Indulge in Sweet Moments at Rb's Cake Shop!</h3>
         </div>
       </section>
       <nav>
-        <input type="checkbox" id="menu-toggle" />
+        <!-- <input type="checkbox" id="menu-toggle" />
         <label id="menu-button-container" for="menu-toggle">
           <div id="menu-button"></div>
-        </label>
+        </label> -->
         <ul id="menu">
           <li class="menu__item"><a href="">Home</a></li>
           <li class="menu__item"><a href="">Cakes</a></li>
@@ -45,16 +46,16 @@
     <main>
       <section class="hero">
         <article id="welcome">
-          <img src="img/cupcake-tray.webp" alt="cupcake-tray" id="hero-img" />
           <h2>Welcome</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
             deserunt. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
             consectetur, adipisicing elit.
           </p>
+          <!-- <img src="img/cupcake-tray.webp" alt="cupcake-tray" id="hero-img" /> -->
         </article>
       </section>
-      <section class="cupcake-group">
+      <!-- <section class="cupcake-group">
         <article class="cupcake_item">
           <img src="img/cupcake-1.webp" alt="" class="cupcake_item-img" />
         </article>
@@ -67,7 +68,7 @@
         <article class="cupcake_item">
           <img src="img/cupcake-4.webp" alt="" class="cupcake_item-img" />
         </article>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer-->
@@ -86,7 +87,7 @@
         </div>
       </div>
       <!-- Copyright -->
-      <div class="copyright">&copy; Rb's Cake, Inc.</div>
+      <div class="copyright">&copy; Rb's Cake, Ltd.</div>
     </footer>
   </body>
 </html>

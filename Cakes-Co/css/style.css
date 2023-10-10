@@ -1,5 +1,9 @@
 /*  Add your styling here */
 
+* {
+  margin: 0;
+}
+
 :root {
   --pink: rgb(242 200 217);
   --darker-pink: rgb(201, 40, 105);
@@ -8,11 +12,27 @@
   --gold: rgb(160 150 111);
 
   --page-width: 100vw;
+
+  --default-font-family: "Nunito Sans", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
+
+  font-size: 16px;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--darker-pink);
+  font-family: var(--default-font-family);
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  margin: 0 0 1rem 0;
+}
+
+h3 {
+  font-weight: 100;
+  font-style: italic;
 }
 
 /* Header */
@@ -20,13 +40,23 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
+  background-color: var(--light-pink);
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.branding {
+  text-align: right;
 }
 
 .cupcake-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
 }
 
 /* Footer Styles */
