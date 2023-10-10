@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <!-- Header -->
+    <header>
+      <section class="header">
+        <img src="" alt="rb-logo" />
+        <div>
+          <h1>Rb's Cake</h1>
+          <p>"Indulge in Sweet Moments at Rb's Cake Shop!"</p>
+        </div>
+      </section>
+      <nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label id="menu-button-container" for="menu-toggle">
+          <div id="menu-button"></div>
+        </label>
+        <ul id="menu">
+          <li class="menu__item"><a href="">Home</a></li>
+          <li class="menu__item"><a href="">Cakes</a></li>
+          <li class="menu__item"><a href="">Ordering</a></li>
+          <li class="menu__item"><a href="">Lessons</a></li>
+          <li class="menu__item"><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Main-->
+    <main>
+      <section class="hero">
+        <article id="welcome">
+          <img src="img/cupcake-tray.webp" alt="cupcake-tray" id="hero-img" />
+          <h2>Welcome</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
+            deserunt. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+          </p>
+        </article>
+      </section>
+      <section class="cupcake-group">
+        <article class="cupcake_item">
+          <img src="img/cupcake-1.webp" alt="" class="cupcake_item-img" />
+        </article>
+        <article class="cupcake_item">
+          <img src="img/cupcake-2.webp" alt="" class="cupcake_item-img" />
+        </article>
+        <article class="cupcake_item">
+          <img src="img/cupcake-3.webp" alt="" class="cupcake_item-img" />
+        </article>
+        <article class="cupcake_item">
+          <img src="img/cupcake-4.webp" alt="" class="cupcake_item-img" />
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+      <div>Join us on</div>
+      <!-- Social Media Logos -->
+      <div class="social-media">
+        <div class="">
+          <img src="img/twitter-icon.svg" alt="twitter-icon" />
+        </div>
+        <div class="">
+          <img src="img/facebook-icon.svg" alt="facebook-icon" />
+        </div>
+        <div class="">
+          <img src="img/instagram-icon.svg" alt="instagram-icon" />
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copyright">&copy; Rb's Cake, Inc.</div>
+    </footer>
+  </body>
 </html>

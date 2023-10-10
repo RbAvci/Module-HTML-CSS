@@ -1,1 +1,61 @@
 /*  Add your styling here */
+
+:root {
+  --pink: rgb(242 200 217);
+  --darker-pink: rgb(201, 40, 105);
+  --light-pink: rgb(249 237 244);
+  --background-color: rgb(255, 255, 255);
+  --gold: rgb(160 150 111);
+
+  --page-width: 100vw;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--darker-pink);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cupcake-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+/* Footer Styles */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12rem;
+  padding: 1rem 0;
+}
+
+.social-media {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.social-media img {
+  width: 30px;
+}
+
+.circle {
+  border: 0.1px solid var(--dark-gray);
+  border-radius: 50%;
+  padding: 15px;
+  height: 30px;
+}
+
+.copyright {
+  color: var(--goldy);
+}
