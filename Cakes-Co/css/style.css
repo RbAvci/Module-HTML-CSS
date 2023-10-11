@@ -121,6 +121,11 @@ main {
 .cupcake-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fre 1fr;
+}
+
+.cupcake_item-img {
+  width: 100%;
 }
 
 #hero-img {
