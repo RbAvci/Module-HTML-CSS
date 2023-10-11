@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -24,21 +28,20 @@
         <img src="img/logo.png" alt="rb-logo" class="logo" />
         <div class="branding">
           <h1>Rb's Cake</h1>
-          <h3>Indulge in Sweet Moments at Rb's Cake Shop!</h3>
+          <h3>Indulge in Sweet Moments!</h3>
         </div>
       </section>
       <nav>
-        <!-- <input type="checkbox" id="menu-toggle" />
-        <label id="menu-button-container" for="menu-toggle">
-          <div id="menu-button"></div>
-        </label> -->
         <ul id="menu">
-          <li class="menu__item"><a href="">Home</a></li>
-          <li class="menu__item"><a href="">Cakes</a></li>
-          <li class="menu__item"><a href="">Ordering</a></li>
-          <li class="menu__item"><a href="">Lessons</a></li>
-          <li class="menu__item"><a href="">About</a></li>
+          <a class="menu_item" href="">Home</a>
+          <a class="menu_item" href="">Cakes</a>
+          <a class="menu_item" href="">Ordering</a>
+          <a class="menu_item" href="">Lessons</a>
+          <a class="menu_item" href="">About</a>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="switchMenu()">
+          <div class="fa fa-bars"></div>
+        </a>
       </nav>
     </header>
 
@@ -89,5 +92,16 @@
       <!-- Copyright -->
       <div class="copyright">&copy; Rb's Cake, Ltd.</div>
     </footer>
+
+    <script>
+      function switchMenu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
