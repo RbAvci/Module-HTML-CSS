@@ -79,8 +79,9 @@ h3 {
 .branding p {
   font-family: var(--heading-font-family);
   font-size: 1.4rem;
-  margin-top: -20px;
-  text-shadow: 0 -1px var(--gold);
+  /* margin-top: -20px; */
+  /* text-shadow: 0 -1px var(--gold); */
+  color: var(--gold);
 }
 
 #menu {
@@ -129,7 +130,6 @@ main {
 
 .cupcake_item-img {
   width: 100%;
-  border: 1px solid var(--light-pink);
 }
 
 #hero-img {
@@ -153,27 +153,37 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 12rem;
   padding: 1rem 0;
+  background-color: var(--light-pink);
 }
 
 .social-media {
   display: flex;
+  flex-direction: column;
   margin: 1rem;
   gap: 1rem;
-}
-
-.social-media img {
-  width: 30px;
+  width: 90%;
 }
 
 .circle {
-  border: 0.1px solid var(--dark-gray);
+  border: 0.1px solid var(--gold);
   border-radius: 50%;
-  padding: 15px;
-  height: 30px;
+  padding: 10px;
+  height: 20px;
+}
+
+.social-media img {
+  width: 20px;
+}
+
+.social-media-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--gold);
 }
 
 .copyright {
-  color: var(--goldy);
+  color: var(--gold);
+  margin-top: 1rem;
 }
