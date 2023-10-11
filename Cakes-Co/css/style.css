@@ -116,16 +116,20 @@ main {
 .welcome {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .cupcake-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fre 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cupcake_item-img {
   width: 100%;
+  border: 1px solid var(--light-pink);
 }
 
 #hero-img {
