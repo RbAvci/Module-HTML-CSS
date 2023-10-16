@@ -4,24 +4,90 @@
 }
 
 :root {
-    
-  --pink: rgb(242 200 217);
-  --darker-pink: rgb(201, 40, 105);
-  --light-pink: rgb(249 237 244);
-  --background-color: var(--white);
-  --gold: rgb(160 150 111);
+  --red: rgba(230, 4, 2, 1);
+  --blue: rgba(2, 0, 172, 1);
+  --yellow: rgba(253, 221, 5, 1);
+  --black: rgba(4, 1, 2, 1);
   --white: rgb(255, 255, 255);
+  --background-color: var(--white);
 
-  --page-width: 100vw;
-
-  --default-font-family: "Nunito Sans", sans-serif;
-  --heading-font-family: "Playfair Display", serif;
-
+  --default-font-family: "Roboto", sans-serif;
+  --heading-font-family: "Pixelify Sans", sans-serif;
   font-size: 16px;
 }
 
+/* General styles, */
+h1 {
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0;
+  font-family: var(--heading-font-family);
+}
+
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  align-items: center;
+  height: 4rem;
+  padding: 1.5rem 3rem;
+  background-color: var(--red);
+}
+
+svg {
+  width: 100px;
+  margin-top: 0.9rem;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background-color: var(--background);
+  color: var(--black);
+  font-family: var(--default-font-family);
+  margin: 0 auto;
+  align-self: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+  border: 3px solid black;
+  margin-left: 3rem;
+  padding: 2rem;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.col-2 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.sample-img {
+  height: 80vh;
+}
+/* Footer Styles */
+footer {
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  font-family: var(--heading-font-family);
 }
