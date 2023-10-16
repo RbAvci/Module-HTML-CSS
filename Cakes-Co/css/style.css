@@ -78,8 +78,6 @@ h3 {
 .branding p {
   font-family: var(--heading-font-family);
   font-size: 1.4rem;
-  /* margin-top: -20px; */
-  /* text-shadow: 0 -1px var(--gold); */
   color: var(--gold);
 }
 
@@ -109,7 +107,7 @@ h3 {
 /* medium */
 @media (min-width: 768px) {
   #menu {
-    display: flex!important;
+    display: flex !important;
     justify-content: center;
     gap: 1rem;
     margin-top: 0.2rem;
@@ -231,6 +229,11 @@ main {
   #hero-img {
     max-width: 50%;
   }
+  .social-media {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 /* large */
@@ -300,13 +303,4 @@ main {
 .copyright {
   color: var(--gold);
   margin-top: 1rem;
-}
-
-/* medium */
-@media (min-width: 768px) {
-  .social-media {
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
 }

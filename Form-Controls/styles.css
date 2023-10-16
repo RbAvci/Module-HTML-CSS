@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    
+  --pink: rgb(242 200 217);
+  --darker-pink: rgb(201, 40, 105);
+  --light-pink: rgb(249 237 244);
+  --background-color: var(--white);
+  --gold: rgb(160 150 111);
+  --white: rgb(255, 255, 255);
+
+  --page-width: 100vw;
+
+  --default-font-family: "Nunito Sans", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
+
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
