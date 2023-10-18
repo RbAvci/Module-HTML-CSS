@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -34,9 +33,8 @@ header {
   background-color: var(--red);
 }
 
-svg {
+header svg {
   width: 100px;
-  margin-top: 0.9rem;
 }
 
 /* Main Styles */
@@ -69,20 +67,82 @@ form {
 }
 
 fieldset {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  height: 20vh;
 }
+
+.input-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.input-set input {
+  width: auto;
+}
+
+.col-1 {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .col-2 {
   grid-column: span 2;
   display: flex;
   flex-direction: column;
 }
 
+label {
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  color: var(--red);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  width: 100%;
+}
+
+.mondrian-img {
+  width: 100%;
+}
+
+select {
+  height: 2.5rem;
+  color: var(--red);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  flex-grow: 1;
+}
+
+#submit {
+  color: var(--blue);
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.primary-btn:hover {
+  color: var(--yellow);
+  background-color: var(--white);
+}
+
 .sample-img {
   height: 80vh;
 }
+
 /* Footer Styles */
+
 footer {
   display: flex;
   height: 4rem;
