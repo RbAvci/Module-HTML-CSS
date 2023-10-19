@@ -171,10 +171,16 @@ select {
 
 footer {
   display: flex;
+  flex-direction: column;
   height: 6rem;
   justify-content: center;
   align-items: center;
   background-color: var(--yellow);
   font-family: var(--heading-font-family);
   border: 3px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue)
 }
