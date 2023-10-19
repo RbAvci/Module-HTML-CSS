@@ -6,7 +6,7 @@
   --red: rgba(230, 4, 2, 1);
   --blue: rgba(2, 0, 172, 1);
   --yellow: rgba(253, 221, 5, 1);
-  --black: rgba(4, 1, 2, 1);
+  --default-text-color: rgba(4, 1, 2, 1);
   --white: rgb(255, 255, 255);
   --background-color: var(--white);
 
@@ -14,6 +14,11 @@
   --heading-font-family: "Pixelify Sans", sans-serif;
   font-size: 16px;
 }
+
+:focus {
+  outline: 2px dashed var(--blue);
+}
+
 
 /* General styles, */
 h1 {
@@ -31,10 +36,12 @@ header {
   height: 4rem;
   padding: 1.5rem 3rem;
   background-color: var(--red);
+  border: 3px solid black;
 }
 
 header svg {
   width: 100px;
+
 }
 
 /* Main Styles */
@@ -50,32 +57,38 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   background-color: var(--background);
-  color: var(--black);
+  color: var(--default-text-color);
   font-family: var(--default-font-family);
   margin: 0 auto;
   align-self: center;
+  padding: 1rem;
 }
 
 form {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  column-gap: 1rem;
   row-gap: 1.5rem;
   border: 3px solid black;
-  margin-left: 3rem;
-  padding: 2rem;
+  margin: 0 3rem;
+  padding: 2rem 0;
 }
 
 fieldset {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  border-radius: 0.5rem;
+}
+
+legend {
+  color: var(--default-text-color);
+  margin-bottom: 0.5rem;
 }
 
 .input-set {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
 }
 
@@ -87,49 +100,60 @@ fieldset {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
+  margin: 0 2rem;
 }
 
 .col-2 {
   grid-column: span 2;
   display: flex;
   flex-direction: column;
+  margin: 0 2rem;
 }
 
 label {
-  color: var(--red);
+  color: var(--default-text-color);
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 input {
-  color: var(--red);
+  color: var(--default-text-color);
   height: 2.5rem;
   border-radius: 0.5rem;
   border-width: 1px;
-  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.required {
+  color: var(--red);
 }
 
 .mondrian-img {
-  width: 100%;
+  height: 125px;
 }
 
 select {
   height: 2.5rem;
-  color: var(--red);
+  color: var(--default-text-color);
   border-radius: 0.5rem;
   border-width: 1px;
   flex-grow: 1;
 }
 
 #submit {
-  color: var(--blue);
-  background-color: var(--yellow);
+  color: var(--white);
+  background-color: var(--blue);
   border: none;
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
+  border-radius: 0.5rem;
   font-size: 1.2rem;
   transition: all 0.2s ease-in;
   text-decoration: none;
+}
+
+#submit:hover {
+  color: var(--blue);
+  background-color: var(--yellow);
+
 }
 
 .primary-btn:hover {
@@ -138,16 +162,19 @@ select {
 }
 
 .sample-img {
-  height: 80vh;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Footer Styles */
 
 footer {
   display: flex;
-  height: 4rem;
+  height: 6rem;
   justify-content: center;
   align-items: center;
   background-color: var(--yellow);
   font-family: var(--heading-font-family);
+  border: 3px solid black;
 }
