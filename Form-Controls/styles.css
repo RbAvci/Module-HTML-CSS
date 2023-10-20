@@ -46,14 +46,8 @@ header svg {
 
 /* Main Styles */
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 100%;
-}
 
-.main {
+form {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   background-color: var(--background);
@@ -62,9 +56,10 @@ main {
   margin: 0 auto;
   align-self: center;
   padding: 1rem;
+  place-items: center;
 }
 
-form {
+main {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   row-gap: 1.5rem;
@@ -89,11 +84,11 @@ legend {
   flex-direction: column;
   align-items: center;
   text-align: center;
-
 }
 
-.input-set input {
-  width: auto;
+.input-set label {
+  display: grid;
+  place-items: center;
 }
 
 .col-1 {
@@ -161,10 +156,51 @@ select {
   background-color: var(--white);
 }
 
-.sample-img {
+
+
+#sample-0 {
   height: 100%;
-  max-width: 100%;
+  max-width: 70%;
   object-fit: contain;
+}
+
+#sample-a,
+#sample-c,
+#sample-rby {
+  display: none;
+  height: 100%;
+  max-width: 70%;
+  object-fit: contain;
+}
+
+#com-a,
+#com-c,
+#com-red-blue-yel {
+  display: none;
+}
+
+#com-a:checked~#sample-a {
+  display: block;
+}
+
+#com-c:checked~#sample-c {
+  display: block;
+}
+
+#com-red-blue-yel:checked~#sample-rby {
+  display: block;
+}
+
+#com-a:checked~#sample-0 {
+  display: none;
+}
+
+#com-c:checked~#sample-0 {
+  display: none;
+}
+
+#com-red-blue-yel:checked~#sample-0 {
+  display: none;
 }
 
 /* Footer Styles */
