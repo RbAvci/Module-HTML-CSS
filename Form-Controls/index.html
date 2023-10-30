@@ -22,6 +22,11 @@
     <h1>Choose your Mondrian Art T-shirt</h1>
   </header>
   <form>
+    <!-- Mondrian Design names = mondrian-group
+    com-a = Composition A
+    com-c = Composition C
+    com-red-blue-yel = Composition with Red Blue and Yellow
+  -->
     <input type="radio" id="com-a" name="mondrian-group" value="com-a" required />
     <input type="radio" id="com-c" name="mondrian-group" value="con-c" />
     <input type="radio" id="com-red-blue-yel" name="mondrian-group" value="com-red-blue-yel" />
@@ -37,7 +42,7 @@
       </div>
       <div class="col-2">
         <label for="email">Email Address <span class="required">*</span></label>
-        <input type="text" id="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*" required />
+        <input type="email" id="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*" required />
       </div>
 
       <div class="col-2">
